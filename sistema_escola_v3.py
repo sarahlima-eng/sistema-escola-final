@@ -40,7 +40,14 @@ def dividir(a, b):
 
 # Adicione aqui as funções conforme o roteiro pedir:
 
-# >> FUNÇÃO 5: cadastrar_aluno(nome, turma, idade)
+def cadastrar_aluno(nome, turma, idade):
+    aluno = {
+        "nome": nome,
+        "turma": turma,
+        "idade": idade
+    }
+    return aluno
+
 # >> FUNÇÃO 6: exibir_aluno(aluno)
 # >> FUNÇÃO 7: calcular_media(notas)
 # >> FUNÇÃO 8: verificar_aprovacao(media)
