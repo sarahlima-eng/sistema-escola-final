@@ -58,7 +58,12 @@ def exibir_aluno(aluno):
 def calcular_media(notas):
     return sum(notas) / len(notas) 
 
-# >> FUNÇÃO 8: verificar_aprovacao(media)
+def verificar_aprovacao(media):
+    if media >= 6:
+        return "Aprovado"
+    else:
+        return "Reprovado"
+
 # >> FUNÇÃO 9: gerar_email(nome, turma)
 # >> FUNÇÃO 10: relatorio_aluno(aluno)
 
