@@ -55,7 +55,9 @@ def exibir_aluno(aluno):
     print(f"Idade: {aluno['idade']} anos")
     print("========================")
 
-# >> FUNÇÃO 7: calcular_media(notas)
+def calcular_media(notas):
+    return sum(notas) / len(notas) 
+
 # >> FUNÇÃO 8: verificar_aprovacao(media)
 # >> FUNÇÃO 9: gerar_email(nome, turma)
 # >> FUNÇÃO 10: relatorio_aluno(aluno)
