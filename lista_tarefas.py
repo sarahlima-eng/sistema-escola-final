@@ -25,7 +25,13 @@ def exibir_menu():
 # VOCÊ VAI ADICIONAR AQUI — 1 função por commit
 # ------------------------------------------------------------
 
-# >> FUNÇÃO 2: adicionar_tarefa(descricao)
+def adicionar_tarefa(descricao):
+    tarefa = {
+        "descricao": descricao,
+        "concluida": False
+    }
+    tarefas.append(tarefa)
+
 # >> FUNÇÃO 3: listar_tarefas()
 # >> FUNÇÃO 4: concluir_tarefa(numero)
 # >> FUNÇÃO 5: contar_pendentes()
