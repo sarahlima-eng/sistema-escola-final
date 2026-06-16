@@ -46,7 +46,14 @@ def concluir_tarefa(numero):
     else:
         print("Tarefa inválida.") 
 
-# >> FUNÇÃO 5: contar_pendentes()
+def contar_pendentes():
+    contador = 0
+
+    for tarefa in tarefas:
+        if not tarefa["concluida"]:
+            contador += 1
+
+    return contador
 
 
 # ------------------------------------------------------------
