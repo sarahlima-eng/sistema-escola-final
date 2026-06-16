@@ -31,8 +31,15 @@ def adicionar_tarefa(descricao):
         "concluida": False
     }
     tarefas.append(tarefa)
+def listar_tarefas():
+    if not tarefas:
+        print("Nenhuma tarefa cadastrada.")
+        return
 
-# >> FUNÇÃO 3: listar_tarefas()
+    for i, tarefa in enumerate(tarefas, start=1):
+        status = "✓" if tarefa["concluida"] else "✗"
+        print(f"{i}. [{status}] {tarefa['descricao']}")
+
 # >> FUNÇÃO 4: concluir_tarefa(numero)
 # >> FUNÇÃO 5: contar_pendentes()
 
