@@ -48,7 +48,13 @@ def cadastrar_aluno(nome, turma, idade):
     }
     return aluno
 
-# >> FUNÇÃO 6: exibir_aluno(aluno)
+def exibir_aluno(aluno):
+    print("==== DADOS DO ALUNO ====")
+    print(f"Nome : {aluno['nome']}")
+    print(f"Turma: {aluno['turma']}")
+    print(f"Idade: {aluno['idade']} anos")
+    print("========================")
+
 # >> FUNÇÃO 7: calcular_media(notas)
 # >> FUNÇÃO 8: verificar_aprovacao(media)
 # >> FUNÇÃO 9: gerar_email(nome, turma)
