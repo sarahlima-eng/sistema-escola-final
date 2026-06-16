@@ -68,7 +68,19 @@ def gerar_email(nome, turma):
     nome_formatado = nome.lower().replace(" ", ".")
     return f"{nome_formatado}.{turma.lower()}@senai.br"
 
-# >> FUNÇÃO 10: relatorio_aluno(aluno)
+def relatorio_aluno(aluno):
+    print("\n======= RELATÓRIO =======")
+    print(f"Nome  : {aluno['nome']}")
+    print(f"Turma : {aluno['turma']}")
+    nota = aluno.get("nota", None)
+    if nota is not None:
+        media = calcular_media(nota) if isinstance(nota, list) else nota
+        print(f"Média : {media:.1f}")
+        print(f"Status: {verificar_aprovacao(media)}")
+        print(f"E-mail: {gerar_email(aluno['nome'], aluno['turma'])}")
+    else:
+        print("Nota  : Não lançada")
+    print("=========================")
 
 
 # ------------------------------------------------------------
