@@ -88,7 +88,11 @@ def relatorio_aluno(aluno):
 # As funções abaixo são melhorias. Adicione na branch certa!
 # ------------------------------------------------------------
 
-# >> FUNÇÃO 11: calcular_frequencia(aulas_dadas, faltas)
+def calcular_frequencia(aulas_dadas, faltas):
+    presencas = aulas_dadas - faltas
+    percentual = (presencas / aulas_dadas) * 100
+    return round(percentual, 2)
+
 # >> FUNÇÃO 12: situacao_final(media, frequencia)
 
 
